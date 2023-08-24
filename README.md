@@ -266,3 +266,18 @@ public class PlanoOperadora {
 
 Se optarem por usar switch / case, estude um pouco mais, sobre os conceitos de continue, break e default.
 ````
+#
+**Referencias:**
+> https://sintaxe.netlify.app/topicos/linguagens/java/basico/controle-fluxo
+
+> https://glysns.gitbook.io/java-basico/controle-de-fluxo/conceito
+
+> Github do instrutor: https://github.com/glysns
+
+> Linkedin do instrutor: https://www.linkedin.com/in/glysns/
+
+> Meu Github: https://github.com/JMAURICIORLIMA
+
+> Meu Linkedin: https://www.linkedin.com/in/josemauricio-rodriguesdelima/
+
+***Bons estudos a todos.***
