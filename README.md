@@ -48,3 +48,34 @@ public class CaixaEletronico {
     }
 }
 ```
+
+## Aula 02
+### Condicionais Composta
+
+Algumas vezes, o nosso programa deverá seguir mais de uma jornada de execução, concionando a uma regra de negócio, este
+cenário é denominado Estrutura Condicional Composta. Vejamos o exemplo abaixo:
+
+![Fluxo](https://sintaxe.netlify.app/assets/fluxo-3.6bc19c11.png)
+
+```java
+// ResultadoEscolar.java
+public class ResultadoEscolar {
+    public static void main(String[] args) {
+
+       int nota = 6;
+       
+       if(nota >= 7)
+        System.out.println("Aprovado");
+
+       else
+        System.out.println("Reprovado");
+    }
+}
+```
+
+````
+📌 Para fixar
+
+Vale ressaltar aqui, que no Java, em uma condição if/else às vezes necessitamos adicionar um bloco de { },se a lógica
+conter mais de uma linha.
+````
