@@ -79,3 +79,28 @@ public class ResultadoEscolar {
 Vale ressaltar aqui, que no Java, em uma condição if/else às vezes necessitamos adicionar um bloco de { },se a lógica
 conter mais de uma linha.
 ````
+
+## Aula 03
+### Condicionais encadeadas
+
+Em um controle de fluxo condicional, nem sempre nos limitamos ao se (if) e se não (else), podemos ter uma terceira,
+quarta e ou inúmeras condições.
+
+![Fluxo encadeado](https://sintaxe.netlify.app/assets/fluxo-4.001480aa.png)
+
+```java
+// ResultadoEscolar.java
+public class ResultadoEscolar {
+    public static void main(String[] args) {
+        int nota = 6;
+
+	if (nota >= 7)
+		System.out.println("Aprovado");
+	else if (nota >= 5 && nota < 7)
+		System.out.println("Recuperação");
+	else
+		System.out.println("Reprovado");
+    }
+}
+```
+
