@@ -281,3 +281,81 @@ Se optarem por usar switch / case, estude um pouco mais, sobre os conceitos de c
 > Meu Linkedin: https://www.linkedin.com/in/josemauricio-rodriguesdelima/
 
 ***Bons estudos a todos.***
+
+## Aula 01
+### Estrutura de repetição
+
+````
+Laços de repetição, também conhecidos como laços de iteração ou simplesmente loops, são comandos que permitem iteração
+de código, ou seja, que comandos presentes no bloco sejam repetidos diversas vezes.
+````
+> https://diegomariano.com/lacos-de-repeticao-2/
+
+Laços ou repetições são representados pelas seguintes estruturas:
+
+* For (para);
+* While (enquanto);
+* Do While (faça enquanto).
+
+### For
+
+O comando for (na tradução literal para a língua portuguesa “para”) permite que uma variável contadora, seja testada e
+incrementada a cada iteração, sendo essas informações definidas na chamada do comando. O comando for recebe como entrada
+uma variável contadora, a condição para continuar a execução e o valor de incrementação.
+
+A estrutura de sintaxe do controle de repetição for é exibida abaixo:
+
+```java
+//estrutura do controle de fluxo for
+
+for (bloco de inicialização; expressão booleana de validação; bloco de atualização)
+{
+// comando que será executado até que a
+// expressão de validação torne-se falsa
+}
+```
+
+Vamos imaginar que, Joãozinho precisa contar até 20 carneirinhos para pegar no sono:
+
+![](https://sintaxe.netlify.app/assets/fluxo-5.b0e7e32c.gif)
+
+```java
+// ExemploFor.java
+public class ExemploFor {
+    public static void main(String[] args) {
+        for(int carneirinhos = 1 ; carneirinhos <=20; carneirinhos ++) {
+            System.out.println(carneirinhos + " - Carneirinho(s)");
+        }
+    }
+}
+```
+
+#### Vamos explicar a estrutura do código acima:
+
+#### For position
+
+1. ``int carneirinhos = 1;`` -> O programa entende que a variável carneirinhos, começa com o valor igual a 1 e isso
+acontece somente uma vez;
+2. ``Carneirinhos < = 20;`` -> O programa verifica se a variável carneirinhos, ainda é menor que 20;
+3. O programa começa a executar o algoritmo, no nosso caso, imprimir a quantidade de carneirinhos em contagem;
+4. ``Carneirinhos ++`` -> O programa aumenta em mais 1, o valor da variável carneirinhos;
+5. O fluxo é finalizado, quando a variável carneirinhos for igual a 20.
+
+```java
+// Outras estruturas
+
+//estrutura 1
+for(int carneirinhos = 1 ; carneirinhos <=20; carneirinhos ++) {
+    System.out.println(carneirinhos + " - Carneirinho(s)");
+}
+
+//estrutura 2
+//o que importa é somente o bloco condicional
+int carneirinhos = 1;
+for( ; carneirinhos <=20; ) {
+    System.out.println(carneirinhos + " - Carneirinho(s)");
+    carneirinhos ++;
+}
+
+//for(somente 1x; uma expresão boolean; acontecerá a cada final da execução){}
+```
