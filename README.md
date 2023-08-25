@@ -411,3 +411,51 @@ public class ExemploFor {
 1. ``String aluno : alunos`` -> De forma abreviada, é criada uma variável nome obtendo um elemento do vetor a cada
 ocorrência;
 2. A impressão de cada aluno é realizada.
+
+
+## Aula 03
+### Break e Continue
+
+**Break** significa quebrar, parar, frear, interromper. E é isso que se faz, quando o Java encontra esse comando pela
+frente. **Continue**, como o nome diz, ele 'continua' o laço. O comando ``break`` interrompe o laço, já o ``continue``
+interrompe somente a iteração atual.
+
+```java
+// class ExemploBreakContinue.java
+public class ExemploBreakContinue {
+public static void main(String[] args) {
+
+	for(int numero = 1; numero <=5; numero ++){
+		if(numero==3)
+			break;
+		
+		System.out.println(numero);
+		
+	}
+	//Qual a saída no console ?
+
+    }
+}
+```
+```java
+// class ExemploBreakContinue.java
+public class ExemploBreakContinue {
+	public static void main(String[] args) {
+	
+	for(int numero = 1; numero <=5; numero ++){
+		if(numero==3)
+			continue;
+		
+		System.out.println(numero);
+		
+	}
+	//Qual a saída no console ?
+
+    }
+}
+```
+````
+✔️ Conclusão
+
+Observem que sempre o break e continue, está condicionado a um critério de negócio.
+````
