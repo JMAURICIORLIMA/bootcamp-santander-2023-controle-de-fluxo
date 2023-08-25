@@ -33,8 +33,8 @@ estrutura Simples, exemplo:
 ![](https://sintaxe.netlify.app/assets/fluxo-2.cd68203c.png)
 
 ```java
-// CaixaEletronico.java
-public class CaixaEletronico {
+// controlefluxocondicional.CaixaEletronico.java
+public class controlefluxocondicional.CaixaEletronico {
     public static void main(String[] args) {
 
        double saldo = 25.0;
@@ -58,8 +58,8 @@ cenário é denominado Estrutura Condicional Composta. Vejamos o exemplo abaixo:
 ![Fluxo](https://sintaxe.netlify.app/assets/fluxo-3.6bc19c11.png)
 
 ```java
-// ResultadoEscolar.java
-public class ResultadoEscolar {
+// controlefluxocondicional.ResultadoEscolar.java
+public class controlefluxocondicional.ResultadoEscolar {
     public static void main(String[] args) {
 
        int nota = 6;
@@ -89,8 +89,8 @@ quarta e ou inúmeras condições.
 ![Fluxo encadeado](https://sintaxe.netlify.app/assets/fluxo-4.001480aa.png)
 
 ```java
-// ResultadoEscolar.java
-public class ResultadoEscolar {
+// controlefluxocondicional.ResultadoEscolar.java
+public class controlefluxocondicional.ResultadoEscolar {
     public static void main(String[] args) {
         int nota = 6;
 
@@ -112,7 +112,7 @@ Vamos refatorar os exemplos acima, para ilustrar o poder deste recurso:
 
 ```java
 // Cenário 1
-public class ResultadoEscolar {
+public class controlefluxocondicional.ResultadoEscolar {
 	public static void main(String[] args) {
 		int nota = 7;
 		String resultado = nota >=7 ? "Aprovado" : "Reprovado";
@@ -122,7 +122,7 @@ public class ResultadoEscolar {
 ```
 ```java
 // Cenário 2
-public class ResultadoEscolar {
+public class controlefluxocondicional.ResultadoEscolar {
 	public static void main(String[] args) {
 		int nota = 6;
 		String resultado = nota >=7 ? "Aprovado" : nota >=5 && nota <7 ? "Recuperação" : "Reprovado";
@@ -222,7 +222,7 @@ Imagina que fomos requisitados a criar um sistema de plano telefônico onde:
 
 ```java
 // Modo condicional convencional
-public class PlanoOperadora {
+public class controlefluxocondicional.PlanoOperadora {
 	public static void main(String[] args) {
 		String plano = "M"; //M / T
 		
@@ -243,7 +243,7 @@ public class PlanoOperadora {
 ```
 ```java
 // Modo condicional switch/case
-public class PlanoOperadora {
+public class controlefluxocondicional.PlanoOperadora {
 	public static void main(String[] args) {
 		String plano = "M"; // M / T
 
