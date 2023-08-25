@@ -359,3 +359,55 @@ for( ; carneirinhos <=20; ) {
 
 //for(somente 1x; uma expresão boolean; acontecerá a cada final da execução){}
 ```
+
+## Aula 02
+### For com array + For each
+
+Também usamos o controle de fluxo for, para interagir sobre arrays e coleções:
+
+```java
+// ExemploFor.java
+public class ExemploFor {
+    public static void main(String[] args) {
+        String alunos[] = { "FELIPE", "JONAS", "JULIA", "MARCOS" };
+
+	    for (int x=0; x<alunos.length; x++) {
+		    System.out.println("O aluno no indice x=" + x + " é " + alunos[x]);
+	    }
+    }
+}
+```
+
+````
+Observe que, como os arrays começam com índice igual a 0 (zero), iniciamos a nossa variável x também com valor zero
+e validamos a quantidade de repetições, a partir da quantidade de elementos do array.
+````
+````
+Fala a verdade: Depois desta explicação deu até sono hein!? 😴😴
+````
+
+### For each
+
+
+O uso do **for / each** está fortemente relacionado, com um cenário onde contenha um array ou coleção, e assim, a
+interação é baseada nos elementos da coleção.
+
+```java
+// ExemploFor.java
+public class ExemploFor {
+    public static void main(String[] args) {
+        
+        String alunos [] =  {"FELIPE","JONAS","JULIA","MARCOS"};
+
+        //Forma abreviada
+	    for(String aluno : alunos) {
+	        System.out.println(aluno);
+	    }
+
+    }
+}
+```
+
+1. ``String aluno : alunos`` -> De forma abreviada, é criada uma variável nome obtendo um elemento do vetor a cada
+ocorrência;
+2. A impressão de cada aluno é realizada.
